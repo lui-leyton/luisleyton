@@ -141,6 +141,23 @@
   .pill{border:1px solid var(--border); color:var(--fg); font-size:12.5px; padding:6px 12px; border-radius:999px; background:rgba(0,255,157,.04); transition:.2s;}
   .pill:hover{border-color:var(--border-strong); background:rgba(0,255,157,.12); color:var(--accent);}
 
+  .proj-card{display:grid;grid-template-columns:96px 1fr;gap:24px;padding:28px;border:1px solid color-mix(in srgb,currentColor 15%,transparent);border-radius:16px;background:color-mix(in srgb,currentColor 4%,transparent)}
+  .proj-icon{width:96px;height:96px;border-radius:22px;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+  .proj-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;margin-bottom:6px}
+  .proj-head h3{margin:0;font-size:1.5rem}
+  .proj-meta{font-size:.85rem;opacity:.7}
+  .proj-lead{margin:0 0 14px;opacity:.9}
+  .proj-list{margin:0 0 18px;padding-left:18px}
+  .proj-list li{margin-bottom:6px}
+  .proj-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+  .proj-tags span{font-size:.78rem;padding:4px 10px;border-radius:999px;border:1px solid color-mix(in srgb,currentColor 25%,transparent)}
+  .proj-shots{display:flex;gap:10px;overflow-x:auto;margin-bottom:20px;padding-bottom:6px}
+  .proj-shots img{height:150px;border-radius:10px;flex:none}
+  .proj-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:currentColor;text-decoration:none;font-weight:600}
+  .proj-btn span{color:var(--bg,#fff);filter:invert(0)}
+  @media (max-width:600px){.proj-card{grid-template-columns:1fr;padding:20px}.proj-icon{width:72px;height:72px}}
+      
+  
   .privacy{background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
   .privacy .card{background:rgba(0,0,0,.25);}
   .privacy h3{color:var(--accent); font-size:15px; margin:26px 0 8px;}
@@ -188,6 +205,7 @@
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
       <a href="#privacidad">Privacidad</a>
       <a class="btn solid" href="https://www.linkedin.com/in/luis-leyton/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </nav>
@@ -451,11 +469,67 @@ linkedin.com/in/luis-leyton</pre>
       </div>
     </div>
   </section>
+  
+  <section class="section" id="proyectos">
+    <div class="wrap">
+      <div class="section-head fade">
+        <div class="tag">05 · Proyectos</div>
+        <h2>Proyectos personales</h2>
+      </div>
+      <article class="proj-card fade">
+        <img class="proj-icon"
+             src="https://play-lh.googleusercontent.com/0Spv7MI9JC17R538jj63GvrRcpZjmyfvKFnrmu9tQGXUsOursy9NrTRSENgytl6ss8KYPDTv8KIF3Bcekyqf_g=w240-h480"
+             alt="Ícono de la app Mateo">
 
+        <div>
+          <div class="proj-head">
+            <h3>Mateo</h3>
+            <span class="proj-meta">Juego educativo · Android · Publicado en Google Play · 2026</span>
+          </div>
+
+          <p class="proj-lead">
+            Juego de plataformas para que niñas y niños practiquen matemáticas explorando una tumba
+            egipcia llena de momias. Diseñé, desarrollé y publiqué la app de principio a fin, desde
+            la mecánica del juego hasta su lanzamiento en Google Play.
+          </p>
+
+          <ul class="proj-list">
+            <li>Cuatro operaciones (suma, resta, multiplicación y división) con 10 niveles de dificultad progresiva cada una.</li>
+            <li>Mecánicas de juego: enemigos con patrullaje, sistema de vidas, tiempo límite por nivel y tres pociones con efectos distintos.</li>
+            <li>Progreso guardado por operación y ranking local con los 10 mejores puntajes, pensado para que varios niños compitan en el mismo teléfono.</li>
+            <li>Diseñada para familias: sin anuncios, sin compras, funciona sin internet y no recopila datos personales.</li>
+            <li>Cumple con la Política de Familias de Google Play.</li>
+          </ul>
+
+          <div class="proj-tags">
+            <span>Android</span>
+            <span>Desarrollo de videojuegos</span>
+            <span>EdTech</span>
+            <span>Google Play Console</span>
+            <span>Privacidad por diseño</span>
+          </div>
+
+          <div class="proj-shots">
+            <img src="https://play-lh.googleusercontent.com/R6kXLo1UcyqzlQWIjMwhMVKqz5TMKU4IIjbNdT5-34Yyoy05JQ9jbsO8ahJNZMkgU8W4oifNe_t9GcK6ogjp=w526-h296" alt="Captura de Mateo 1" loading="lazy">
+            <img src="https://play-lh.googleusercontent.com/PCD3pOGfQONg6b0q-i7kjIXM4w21QRiWSQ6vYBcyZloO0HWLUDLsLuOtyh8Z-rCsY7VsFBlgoL1PsoaXuRpPg7A=w526-h296" alt="Captura de Mateo 2" loading="lazy">
+            <img src="https://play-lh.googleusercontent.com/GFW7uLER7-1iggOIzu2NheLehqBmkZHcHuUel6rMwpDIwtm8p43fdCxc0uBNVQ_wy6Ps7grxtDpUPF55jqf8Jg=w526-h296" alt="Captura de Mateo 3" loading="lazy">
+            <img src="https://play-lh.googleusercontent.com/LIzUFiZOf52AaR3tos6Os-5jK_QQ83gHi0q3HtpY-YkfaOz3M5rw0VvGb3gw_CXHjnAX9yXTX5aFjK9gS8iD6_U=w526-h296" alt="Captura de Mateo 4" loading="lazy">
+          </div>
+
+          <a class="proj-btn"
+             href="https://play.google.com/store/apps/details?id=cl.leyton.mateo"
+             target="_blank" rel="noopener">
+            <span>▶ Descargar en Google Play</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+    
   <section class="section privacy" id="privacidad" aria-labelledby="privacidad-title">
   <div class="wrap">
     <div class="section-head fade">
-      <div class="tag">05 · Legal</div>
+      <div class="tag">06 · Legal</div>
       <h2 id="privacidad-title">Política de Privacidad</h2>
     </div>
     <div class="card fade">
@@ -554,6 +628,7 @@ linkedin.com/in/luis-leyton</pre>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
       <a href="https://www.linkedin.com/in/luis-leyton/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="#privacidad">Política de Privacidad</a>
     </div>
